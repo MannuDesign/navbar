@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Menu </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/06cd591c56.js" crossorigin="anonymous"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.container{width:100%;height:800px; }
+/* topbar codde start   */
+ .topbar{width:100%; height:30px; background:#F3E8E8; position:fixed;z-index: 1200; display:block;}   
+.topcontact1{width:33%;height:30px;background:#F3E8E8; float: left;}
+.topcontact1 input{width:100%;}
+.topcontact1 small{float:right;margin:0% 2% 0% 2%;}
+ 
+
+/* topbar codde end   */ 
+.header{width:100%;height:50px;background:#F3E8E8;position: fixed;box-shadow:#ffffff;padding:0px 3px 0px 7px; display:flex;align-items:center;
+justify-content:center;z-index:1000;justify-content: space-between;margin-top: 30px;
+}
+
+.navbar{width:auto;height:50px;}
+.navbar>ul {list-style:none;margin-left:20px;}
+.navbar ul>li{position:relative;float:left; text-decoration:none;margin-left:20px;}
+.navbar ul>li>a{color:black; padding:15px; display:block;}
+.navbar ul>li>a:hover{background:#ECE0E0lor;}
+
+.navbar>ul>li>ul{
+    list-style:none;
+    position:absolute;
+    width:150px;
+    background:#fff;
+    color:black;
+    display:none;
+}
+.navbar>ul>li>ul>li{
+    width:100%;
+    border-top:1px solid rgba(0,0,0,.1);
+    color:black;
+}
+.navbar>ul>li>ul>li>a{
+    color:black;
+}
+.navbar>ul>li:focus-within,
+.navbar>ul>li:hover > ul{
+    display:initial;
+}
+
+#menu_bar{
+    display:none;
+}
+
+.header label{
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    display:none;
+}
+
+ 
+
+
+
+
+
+
+@media(max-width:991px){
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+    
+.container{width:100%;height:800px; }
+ /* topbar codde start   */
+ .topbar{width:100%; height:30px; background:#8F6F6F; position:fixed;z-index: 1200;margin:0; padding:0;}   
+.topcontact1{width:30%;height:30px;background:transparent; float: left;}
+.topcontact1 input{width:100%;}
+.topcontact1 small{float:right;}
+
+.topcontact1 span {display:none;}
+.topcontact1 i {float:left; margin:0% 0% 0% 0%;}
+ 
+
+/* topbar codde end   */ 
+    
+    
+    
+.header{width:100%;height:100px;background:#8F6F6F;position: fixed;box-shadow:#ffffff;padding:0px 5px 0px 7px; display:flex;align-items:center;
+justify-content:center;z-index:1000;justify-content: space-between;
+}
+    
+ 
+ .header {
+        padding:20px;
+     width:100%;
+    }
+    
+.header label{
+    display:initial;
+}    
+.navbar{position:absolute; top:100%;left:0;right:0; border-top:1px solid rgba(0,0,0,.1); background:#8F6F6F; display:none; height:auto;} 
+    
+    .navbar>ul>li{
+        width:100%;
+        
+    }  
+    .navbar{position:absolute;width:100%;top: 100%;left:0;right:0;} 
+    
+    .navbar>ul>li{width:100%;}
+    
+    .navbar>ul>li>ul{
+        position:relative;
+        width:100%;
+    }  
+    
+    .navbar>ul>li>ul>li{
+    background:#8F1B1D;
+        left:0;
+    }
+    .navbar>ul>li>ul>li{
+    background:#8F6F6F;
+        left:0;
+    }   
+#menu_bar:checked ~ .navbar{
+        display:initial;
+    } 
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.container{width:100%;height:800px; }
+/* topbar codde start   */
+ .topbar{width:100%; height:30px; background:#F3E8E8; position:fixed;z-index: 1200; display:block;}   
+.topcontact1{width:33%;height:30px;background:#F3E8E8; float: left;}
+.topcontact1 input{width:100%;}
+.topcontact1 small{float:right;margin:0% 2% 0% 2%;}
+ 
+
+/* topbar codde end   */ 
+.header{width:100%;height:50px;background:#F3E8E8;position: fixed;box-shadow:#ffffff;padding:0px 3px 0px 7px; display:flex;align-items:center;
+justify-content:center;z-index:1000;justify-content: space-between;margin-top: 30px;
+}
+
+.navbar{width:auto;height:50px;}
+.navbar>ul {list-style:none;margin-left:20px;}
+.navbar ul>li{position:relative;float:left; text-decoration:none;margin-left:20px;}
+.navbar ul>li>a{color:black; padding:15px; display:block;}
+.navbar ul>li>a:hover{background:#ECE0E0lor;}
+
+.navbar>ul>li>ul{
+    list-style:none;
+    position:absolute;
+    width:150px;
+    background:#fff;
+    color:black;
+    display:none;
+}
+.navbar>ul>li>ul>li{
+    width:100%;
+    border-top:1px solid rgba(0,0,0,.1);
+    color:black;
+}
+.navbar>ul>li>ul>li>a{
+    color:black;
+}
+.navbar>ul>li:focus-within,
+.navbar>ul>li:hover > ul{
+    display:initial;
+}
+
+#menu_bar{
+    display:none;
+}
+
+.header label{
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    display:none;
+}
+
+ 
+
+
+
+
+
+
+@media(max-width:991px){
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+    
+.container{width:100%;height:800px; }
+ /* topbar codde start   */
+ .topbar{width:100%; height:30px; background:#8F6F6F; position:fixed;z-index: 1200;margin:0; padding:0;}   
+.topcontact1{width:30%;height:30px;background:transparent; float: left;}
+.topcontact1 input{width:100%;}
+.topcontact1 small{float:right;}
+
+.topcontact1 span {display:none;}
+.topcontact1 i {float:left; margin:0% 0% 0% 0%;}
+ 
+
+/* topbar codde end   */ 
+    
+    
+    
+.header{width:100%;height:100px;background:#8F6F6F;position: fixed;box-shadow:#ffffff;padding:0px 5px 0px 7px; display:flex;align-items:center;
+justify-content:center;z-index:1000;justify-content: space-between;
+}
+    
+ 
+ .header {
+        padding:20px;
+     width:100%;
+    }
+    
+.header label{
+    display:initial;
+}    
+.navbar{position:absolute; top:100%;left:0;right:0; border-top:1px solid rgba(0,0,0,.1); background:#8F6F6F; display:none; height:auto;} 
+    
+    .navbar>ul>li{
+        width:100%;
+        
+    }  
+    .navbar{position:absolute;width:100%;top: 100%;left:0;right:0;} 
+    
+    .navbar>ul>li{width:100%;}
+    
+    .navbar>ul>li>ul{
+        position:relative;
+        width:100%;
+    }  
+    
+    .navbar>ul>li>ul>li{
+    background:#8F1B1D;
+        left:0;
+    }
+    .navbar>ul>li>ul>li{
+    background:#8F6F6F;
+        left:0;
+    }   
+#menu_bar:checked ~ .navbar{
+        display:initial;
+    } 
+}
+
+ 
+
+</style>
+<body>
+<div class="container">
+
+    <div class="topbar">
+    <div class="topcontact1">
+     <span>Mob +918809823983 </span>   
+     <span><a href="mailto:Mannukumar74000@gmail.com" style="color:black;">  Mannukumar74000@gmail.com </a></span> </div>
+    <div class="topcontact1">
+     <input type="search" placeholder="Serch......." />   
+    </div>
+    <div class="topcontact1"> 
+     <i class="fa-brands fa-square-instagram" style="margin:0.5% 1% 0% 1%;font-size:23px;"></i>
+    <i class="fa-brands fa-youtube" style="margin:0.5% 1% 0% 1%;font-size:23px;"></i>
+     <i class="fa-solid fa-globe" style="margin:0.5% 1% 0% 1%; font-size:23px;"></i>
+        
+     <small> <i class="fa-solid fa-user" style="font-size:23px;"></i> Sign In </small>   
+     <small>  <i class="fa-solid fa-lock" style="font-size:23px;"></i> Account </small>  
+        
+        
+    </div>
+      
+    </div> 
+    
+<div class="header">
+    
+<a href="#" class="logo"> <img src="https://greatkashmirtours.com/wp-content/uploads/2024/05/logo-2.png" style="width:300px;height:50px;object-fit: contain;"> </a>  
+    
+ <input type="checkbox" id="menu_bar">
+ <label for="menu_bar"> <i class="fa-solid fa-bars" style="color:#f7f6f9;">
+ </i>    
+ </label>
+ 
+ <nav class="navbar">  
+    <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Page +</a>
+    <ul>
+    <li><a href="#"> Blog </a></li>     
+    <li><a href="#"> Serviccs </a></li>     
+    </ul>     
+        
+        </li>
+     <li><a href="#">Reiew</a></li>
+     <li><a href="#">Gallery</a></li>
+     <li><a href="#">Contact</a></li>
+     <li><a href="#">Contact</a></li>
+     
+      
+     </ul>
+    
+ </nav>   
+</div>
+    
+ 
+    
+    
+    
+    
+    
+ </div>  
+ 
+</body>
+</html>
